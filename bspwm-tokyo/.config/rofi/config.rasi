@@ -1,0 +1,133 @@
+configuration {
+    display-drun: "Apps";
+    font: "FiraCode Nerd Font Medium 12";
+    drun-display-format: "{icon} {name}";
+    show-icons: true;
+    icon-theme: "Papirus";
+}
+
+@theme "/dev/null"
+
+* {
+    bg: #1f2335;
+    bg-alt: #ff9e64;
+
+    fg: #c0caf5;
+    fg-alt: #3b4261;
+
+    blue: #7aa2f7;
+
+    bakground-color: @bg;
+
+    spacing: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+}
+window {
+    background-color: @bg;
+    padding:          0;
+    width: 700px;
+    height: 650px;
+    border: 1px;
+    border-color: #c0caf5;
+}
+mainbox {
+    border:  0;
+    padding: 0;
+    background-color: transparent;
+
+}
+message {
+    border:       1px dash 0px 0px ;
+    padding:      1px ;
+}
+textbox {
+    background-color: @bg;
+    text-color: @fg;
+}
+
+listbox {
+    spacing: 10;
+    padding: 10;
+    children: ["message", "listview"];
+}
+
+listview {
+    background-color: transparent;
+    padding: 10;
+}
+
+element {
+    background-color: @bg;
+    children: [element-icon, element-text];
+    spacing: 5px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: @fg;
+    padding: 12;
+
+}
+
+element-icon{
+    background-color: transparent;
+    padding: 5;
+    size: 30;
+
+}
+
+element selected {
+    background-color: @blue;
+}
+
+element-text selected {
+    text-color: @fg-alt;
+}
+
+button.selected {
+    background-color: @bg-alt;
+    text-color: @fg-alt;
+}
+inputbar {
+    spacing:    0;
+    text-color: @fg;
+    padding:    5;
+    background-color: @bg;
+}
+case-indicator {
+    spacing:    0;
+    text-color: @fg;
+}
+entry {
+    placeholder: "Buscar";
+    spacing:    0;
+    text-color: @fg;
+    background-color: @bg;
+    padding: 5;
+    vertical-align: 0.5;
+
+}
+prompt {
+    spacing:    0;
+    text-color: @bg;
+    background-color: @blue;
+    padding: 10px;
+}
+inputbar {
+    enabled: true;
+    children:   [ prompt,textbox-prompt-colon, entry];
+    spacing: 0;
+    padding: 80px 60px;
+    background-image: url("~/Fondos/wallhaven-1p75xv_1920x1080.png", width);
+}
+textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    padding: 5;
+    text-color: @bg;
+    background-color: @blue;
+    vertical-align: 0.5;
+}

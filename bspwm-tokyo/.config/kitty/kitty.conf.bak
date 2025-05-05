@@ -1,0 +1,64 @@
+# terminal opacity and blur
+background_opacity 0.8
+background_blur 0
+
+# padding, margin etc
+window_padding_width 5
+
+# terminal bell
+enable_audio_bell no
+
+# font
+font_family        FiraCode Nerd Font
+bold_font          FiraCode Nerd Font
+italic_font        FiraCode Nerd Font
+bold_italic_font   FiraCode Nerd Font
+font_size 12.0
+# foreground                      #C0CAF5
+# background                      #1A1B26
+# selection_foreground            #C0CAF5
+# selection_background            #2C4075
+# Cursor colors
+# cursor                          #CED6F7
+# cursor_text_color               #1A1B26
+# URL underline color when hovering with mouse
+# kitty window border colors
+# OS Window titlebar colors
+# Tab bar colors
+# active_tab_foreground           #C0CAF5
+# active_tab_background           #6E20BD
+# inactive_tab_foreground         #C0CAF5
+# inactive_tab_background         #303142
+# Colors for marks (marked text in the terminal)
+# The basic 16 colors
+# black
+# color0 #1A1B26
+# color8 #36384D
+# red
+# color1 #F77890
+# color9 #F98EA0
+# green
+# color2  #74DBCB
+# color10 #6DE5D3
+# yellow
+# color3  #E1B068
+# color11 #F2BA64
+# blue
+# color4  #7BA2F7
+# color12 #90AFFA
+# magenta
+# color5  #BB9BF7
+# color13 #C6ACFA
+# cyan
+# color6  #2BC4DE
+# color14 #74DBCB
+# white
+# color7  #C0CAF5
+# color15 #7E98EB
+# You can set the remaining 240 colors as color16 to color255.
+
+
+# BEGIN_KITTY_THEME
+# Dark One Nuanced
+include current-theme.conf
+# END_KITTY_THEME
