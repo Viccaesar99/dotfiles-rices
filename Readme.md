@@ -2,7 +2,7 @@
 
 ## bspwm-tokyo
 
-Um rice de bspwm enfocado en ser minimalista y basado en el tema de tokyonight.
+Um rice de bspwm enfocado en ser minimalista y basado en el tema de tokyonight. Picom tiene algunas animaciones interesantes sientete libre de probrarlas.
 
 ---
 
